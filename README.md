@@ -1,28 +1,36 @@
-# Image Classification using Convolutional Neural Networks (CNN)
+# Image-to-Animation Conversion using Deep Learning
 
-This Google Colab notebook demonstrates image classification using Convolutional Neural Networks (CNNs). It uses the CIFAR-10 dataset, which consists of 60,000 32x32 color images in 10 classes, with 6,000 images per class. The classes are: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.
+This Google Colab notebook demonstrates the process of converting images into animations using deep learning techniques. It utilizes a generative adversarial network (GAN) architecture, specifically designed for image-to-image translation tasks.
 
 ## Notebook Overview
 
 1. **Loading and Preprocessing Data:**
-   - Loading the CIFAR-10 dataset using TensorFlow Datasets.
-   - Preprocessing the data by normalizing pixel values and converting labels to one-hot encoded vectors.
+   - Preparing the dataset for training the GAN model.
+   - Preprocessing the input images, such as resizing and normalizing pixel values.
 
-2. **Building the CNN Model:**
-   - Defining a CNN model architecture using TensorFlow's Keras API.
-   - Compiling the model with appropriate loss function, optimizer, and metrics.
+2. **Building the GAN Model:**
+   - Defining a GAN architecture suitable for image-to-animation conversion.
+   - Implementing generator and discriminator networks using TensorFlow's Keras API.
 
-3. **Training the Model:**
-   - Training the CNN model on the CIFAR-10 dataset.
-   - Monitoring training progress with training/validation loss and accuracy.
+3. **Training the GAN Model:**
+   - Training the GAN model on the input image dataset.
+   - Monitoring training progress and optimizing model parameters.
 
-4. **Evaluating the Model:**
-   - Evaluating the trained model on the test dataset.
-   - Computing test accuracy and generating classification reports.
+4. **Generating Animations:**
+   - Using the trained GAN model to generate animations from input images.
+   - Post-processing generated animations, if necessary.
 
-5. **Visualizing Predictions:**
-   - Visualizing sample images from the test dataset along with their predicted labels.
-   - Displaying the top misclassified images to understand model performance.
+5. **Visualizing Results:**
+   - Displaying sample input images along with their corresponding generated animations.
+   - Evaluating the quality of generated animations and discussing potential improvements.
+
+## Usage
+
+To run this notebook, you can open it in Google Colab and execute each cell sequentially. Make sure to allocate sufficient resources (e.g., GPU) for training the GAN model, as it can be computationally intensive.
+
+## Dataset Citation
+
+If using a specific dataset for training the GAN model, provide appropriate citations and acknowledgments for the dataset source.
 
 ## Usage
 
@@ -34,4 +42,4 @@ The CIFAR-10 dataset was collected by Alex Krizhevsky, Vinod Nair, and Geoffrey 
 
 ## Credits
 
-This notebook was created by [Your Name]. You can find the original notebook [here](https://colab.research.google.com/drive/1xKluf7pnLS_Ld0VWXZ3rV6CiCpVP66EL?usp=sharing).
+You can find the original notebook [here](https://colab.research.google.com/drive/1xKluf7pnLS_Ld0VWXZ3rV6CiCpVP66EL?usp=sharing). Refernces of many other .ipynb notebooks has been taken and I'm grateful for their assistance.
